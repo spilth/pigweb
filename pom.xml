@@ -14,6 +14,12 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <dependency>
+      <groupId>com.buildndeploy</groupId>
+      <artifactId>piglib</artifactId>
+      <version>1.0-SNAPSHOT</version>
+   </dependency>
   </dependencies>
   <build>
     <finalName>pigweb</finalName>
