@@ -8,6 +8,15 @@ String piglatin = translator.toPiglatin(message);
 <html>
 	<head>
 		<title>Pig Latin Translator</title>
+
+		<style="text/css">
+			body {
+				font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+				font-weight: 300;
+				background: #fff;
+				color: #000;
+			}
+		</style>
 	</head>
 
 	<body>
