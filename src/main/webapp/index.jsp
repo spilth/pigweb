@@ -1,5 +1,7 @@
 <%@ page import="com.buildndeploy.piglatin.Translator" %>
+
 <%
+
 String message = "Hello, world!";
 Translator translator = new Translator();
 String piglatin = translator.toPiglatin(message);
@@ -40,7 +42,7 @@ String piglatin = translator.toPiglatin(message);
 		
 		<p>Jenkins and site hosting provided by <a href="http://cloudbees.com/">CloudBees</a></p>
 		
-		<p><a href="http://cloudbees.com/"><img src="http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png" width="128" height="92" /></p>
+		<p><a href="http://cloudbees.com/"><img src="http://web-static-cloudfront.s3.amazonaws.com/images/badges/BuiltOnDEV.png" width="128" height="92" /></a></p>
 				
 	</body>
 </html>
