@@ -60,8 +60,8 @@ String piglatin = translator.toPiglatin(message);
 		
 		<ul>
 			<li><a href="https://github.com/buildndeploy/pigweb">pigweb on GitHub</a></li>
-			<li><a href="http://nemo.sonarsource.org/dashboard/index/com.buildndeploy:pigweb">pigweb Sonar Dashboard</a></li>
 			<li><a href="https://buildndeploy.ci.cloudbees.com/job/pigweb/">pigweb CI on Jenkins by CloudBees</a></li>
+			<li><a href="http://nemo.sonarsource.org/dashboard/index/com.buildndeploy:pigweb">pigweb Sonar Dashboard</a></li>
 		</ul>
 		
 		<p>Jenkins and site hosting provided by <a href="http://cloudbees.com/">CloudBees</a></p>
