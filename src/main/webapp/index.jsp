@@ -1,10 +1,15 @@
 <%@ page import="com.buildndeploy.piglatin.Translator" %>
-
 <%
 
-String message = "Hello, world!";
-Translator translator = new Translator();
-String piglatin = translator.toPiglatin(message);
+String english = "Hello, world!";
+String piglatin = "";
+
+if (request.getMethod().equals("POST")) {
+	english = request.getParameter("english"); 
+	Translator translator = new Translator();
+	piglatin = translator.toPiglatin(english);
+}
+
 %>
 
 <html>
@@ -37,12 +42,21 @@ String piglatin = translator.toPiglatin(message);
 
 	<body>
 		<h1>Pig Latin Translator</h1>
+		
+		<% if (request.getMethod().equals("POST"))  { %>
+			<h2>Original English</h2>
+			<p><code><%= english %></code></p>
 
-		<h2>English</h2>
-		<p><%= message %></p>
+			<h2>Pig Latin</h2>
+			<p><code><%= piglatin %></code></p>
+		<% } %>
 
-		<h2>Pig Latin Translation</h2>
-		<p><%= piglatin %></p>
+		<h2>English to Translate</h2>
+		<form method="POST">
+			<p>Enter the English you'd like to translate below and click "Translate".</p>
+			<p><textarea rows="8" cols="80" name="english"><%= english %></textarea></p>
+			<p><input type="submit" value="Translate" /></p>
+		</form>
 
 		<h2>About This Project</h2>
 
