@@ -27,17 +27,27 @@ String piglatin = translator.toPiglatin(message);
 		<h2>English</h2>
 		<p><%= message %></p>
 
-		<h2>Pig Latin</h2>
+		<h2>Pig Latin Translation</h2>
 		<p><%= piglatin %></p>
 
-		<h2>About</h2>
+		<h2>About This Project</h2>
 
 		<p>This site is an example usage of the piglib library for translating English to Pig Latin.</p>
 		
+		<h3>piglib</h3>
+
 		<ul>
 			<li><a href="https://github.com/buildndeploy/piglib">piglib on GitHub</a></li>
+			<li><a href="https://buildndeploy.ci.cloudbees.com/job/piglib/">piglib CI on Jenkins by CloudBees</a></li>
+			<li><a href="http://nemo.sonarsource.org/dashboard/index/com.buildndeploy:piglib">piglib Sonar Dashboard</a></li>
+		</ul>
+		
+		<h3>pigweb</h3>
+		
+		<ul>
 			<li><a href="https://github.com/buildndeploy/pigweb">pigweb on GitHub</a></li>
-			<li><a href="https://buildndeploy.ci.cloudbees.com/">CloudBees Jenkins server for piglib and pigweb</a></li>
+			<li><a href="http://nemo.sonarsource.org/dashboard/index/com.buildndeploy:pigweb">pigweb Sonar Dashboard</a></li>
+			<li><a href="https://buildndeploy.ci.cloudbees.com/job/pigweb/">pigweb CI on Jenkins by CloudBees</a></li>
 		</ul>
 		
 		<p>Jenkins and site hosting provided by <a href="http://cloudbees.com/">CloudBees</a></p>
